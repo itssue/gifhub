@@ -6,6 +6,7 @@
       <th>Name</th>
       <th>Tag</th>
       <th>Category</th>
+      <th>User Id</th>
       <th>Image</th>
       <th></th>
       <th></th>
@@ -19,6 +20,7 @@
         <td><%= post.name %></td>
         <td><%= post.tag %></td>
         <td><%= post.category %></td>
+        <td><%= post.user_id %></td>
         <td><img src="<%= post.image %>"</td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
