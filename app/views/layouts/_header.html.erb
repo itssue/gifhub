@@ -5,8 +5,15 @@
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home",    '#' %></li>
-          <li><%= link_to "Help",    '#' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+          <% unless user_signed_in? -%>
+            <li><%= link_to "Sign in", new_user_session_path %></li>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+          <% end -%>
+          <% if user_signed_in? -%>
+            <li><%= current_user.email %></li>
+            <li><%= link_to "My info", edit_user_registration_path %></li>
+            <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+          <% end -%>
         </ul>
       </nav>
     </div>
