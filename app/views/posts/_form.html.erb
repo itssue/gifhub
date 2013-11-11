@@ -13,25 +13,26 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :placeholder => 'Name' %>
   </div>
   <div class="field">
     <%= f.label :tag %><br>
-    <%= f.text_field :tag %>
+    <%= f.text_field :tag, :placeholder => 'Tags' %>
   </div>
   <div class="field">
     <%= f.label :category %><br>
-    <%= f.text_field :category %>
+    <%= f.text_field :category, :placeholder => 'Categories' %>
   </div>
   <div class="field">
     <%= f.label :image %><br>
-    <%= f.text_field :image %>
+    <%= f.text_field :image, :placeholder => 'GIF url' %>
   </div>
-    <div class="field">
+      <div class="field">
     <%= f.label :user_id %><br>
     <%= f.integer :user_id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Add", :class=>'btn btn-primary'  %>
   </div>
+
 <% end %>

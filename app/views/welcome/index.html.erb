@@ -7,7 +7,16 @@
 <% if user_signed_in? -%>
 <h1>GIFs</h1>
 
-<table>
+<div id="container">
+  <div class="item">
+    <% @posts.each do |post| %>
+    <%= image_tag post.image %>
+    <%= post.name %>
+  </div>
+  <% end %>
+</div>
+
+<!-- <table>
   <thead>
     <tr>
       <th>Name</th>
@@ -35,7 +44,7 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
 <% end -%>
