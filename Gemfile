@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'devise'
+gem 'mailchimp-api', require: 'mailchimp'
+gem 'mandrill-api'
+gem 'gibbon'
 
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '2.3.2.0'
