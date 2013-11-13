@@ -4,8 +4,8 @@
   <p><%= link_to 'Sign in as User', new_user_session_path %></p>
 <% end -%>
 
-<h1>GIFs</h1>
 <% if user_signed_in? %>
+  <br />
   <div class="masonry">
     <% @posts.each do |post| %>
       <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
