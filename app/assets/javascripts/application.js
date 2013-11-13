@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap
 //= require masonry
+//= require imagesloaded
 //= require_tree .
