@@ -5,8 +5,43 @@ body {
 
 .contentBox {
   padding: 10px;
-  background-color: #E8E8E8;
+  background-color: #F0F0F0;
   margin-bottom: 20px;
+}
+
+.contentBox a:hover {
+  color: #0099FF;
+  text-decoration: none;
+}
+
+.postName {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.postTags {
+  color: #909090;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.postCats {
+  color: #909090;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.postEdit {
+  border-top: 4px solid #ffffff;
+  color: #D0D0D0;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 10px;
+  padding-top: 7px;
+  text-align: right;
 }
 
 .form-signin {
@@ -47,7 +82,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #222;
+  color: #0099FF;
   text-decoration: none;
 }
 

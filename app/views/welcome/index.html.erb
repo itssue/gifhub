@@ -10,10 +10,10 @@
     <% @posts.each do |post| %>
       <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
         <div class="contentBox">
-          <%= image_tag post.image, class: 'img-responsive' %><br />
-          <strong>Name: </strong><%= post.name %><br />
-          <strong>Tags: </strong><%= post.tag %><br />
-          <strong>Categories: </strong><%= post.category %><br />
+          <%= image_tag post.image, class: 'img-responsive' %>
+          <div class="postName"><%= post.name %></div>
+          <div class="postTags"><strong>TAGS</strong> / <%= post.tag %></div>
+          <div class="postCats"><strong>CATEGORIES</strong> / <%= post.category %></div>
         </div>
       </div>
     <% end %>
