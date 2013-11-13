@@ -1,29 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @post.name %>
-</p>
-
-<p>
-  <strong>Tag:</strong>
-  <%= @post.tag %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @post.category %>
-</p>
-
-<p>
-  <strong>User Id:</strong>
-  <%= @post.user_id %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @post.image %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<br />
+<div class="masonry">
+  <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <p id="notice"><%= notice %></p>
+    <div class="contentBox">
+      <%= image_tag @post.image, class: 'img-responsive' %>
+      <div class="postName"><%= @post.name %></div>
+      <div class="postTags"><strong>TAGS</strong> / <%= @post.tag %></div>
+      <div class="postCats"><strong>CATEGORIES</strong> / <%= @post.category %></div><br />
+      <div class="postEdit"><%= link_to 'edit', edit_post_path(@post) %></div>
+    </div>
+  </div>
+</div>
