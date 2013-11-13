@@ -23,7 +23,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 15px;
   font-weight: bold;
   line-height: 1;
 }
@@ -32,6 +32,8 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+/* footer */
 
 footer {
   margin-top: 45px;
@@ -46,6 +48,7 @@ footer a {
 
 footer a:hover {
   color: #222;
+  text-decoration: none;
 }
 
 footer small {
@@ -59,4 +62,5 @@ footer ul {
 
 footer ul li {
   float: left;
+  margin-left: 15px;
 }

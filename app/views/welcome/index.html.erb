@@ -11,7 +11,9 @@
       <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-6">
         <div class="contentBox">
           <%= image_tag post.image, class: 'img-responsive' %><br />
-          <%= post.name %>
+          <strong>Name: </strong><%= post.name %><br />
+          <strong>Tags: </strong><%= post.tag %><br />
+          <strong>Categories: </strong><%= post.category %><br />
         </div>
       </div>
     <% end %>
