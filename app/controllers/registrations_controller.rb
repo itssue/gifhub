@@ -23,11 +23,9 @@ class RegistrationsController < Devise::RegistrationsController
     end
 
 
-	    def confirm!
-	        super
-
-
-	    end
+    def confirm!
+        super
+    end
 
     def edit
         super
@@ -38,7 +36,7 @@ class RegistrationsController < Devise::RegistrationsController
     end
 
     def destroy
-        super 
+        super
     end
 
     def cancel

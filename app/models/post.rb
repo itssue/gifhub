@@ -13,4 +13,5 @@ class Post < ActiveRecord::Base
     maximum: 20,
   	}
   	validates :image, :format => URI::regexp(%w(http https))
+
 end
