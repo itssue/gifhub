@@ -2,6 +2,13 @@ Gifhub::Application.routes.draw do
   devise_for :users, :controllers => { :registrations => 'registrations' }
   resources :posts
 
+  get "welcome/about"
+
+  match '/about',   to: 'welcome#about',   via: 'get'
+  match '/add',   to: 'posts#new',   via: 'get'
+  match '/mygifs',   to: 'posts#index',   via: 'get'
+  match '/myaccount',   to: 'registrations#edit',   via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

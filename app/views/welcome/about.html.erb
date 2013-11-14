@@ -1,1 +1,62 @@
-<h1>It's Pinterest for GIFs. Need I say more?</h1>
+<h2>It's Pinterest for GIFs.</h2> 
+<p>Need I say more?</p>
+<div class="fadein"></div>
+        <div id="note">
+          <p><span class="fadein">There's more to come, I promise.</span></p>
+          <div class="fadein"></div>
+          <p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+          <p><span class="fadein">But in the meanwhile, I wanted to say thanks to Joe, Tim, Brooks, and General Assembly.</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p>&nbsp;</p>
+          <p><span class="fadein"><strong>Joe</strong>, this has been an <em>amazing</em> class. I always left class feeling <em>so</em> inspired.</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p><span class="fadein">Well, maybe not those first few classes...</span></p>
+          <p><span class="fadein">But if there were a BEWD2, sign me up.</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p>&nbsp;</p>
+          <p><span class="fadein"><strong>Tim</strong>, from that first TA session at Starbucks til now... Look at how far I've come!</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p><span class="fadein">Thanks all the help and advice you've given.</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p>&nbsp;</p>
+          <p><span class="fadein"><strong>Brooks</strong>, thanks for the pep talks, the bug fixes, and of course the idea and the name.</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p><span class="fadein">(And for this code too... pwahahaha.)</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p>&nbsp;</p>
+          <p><span class="fadein">And to <strong>General Assembly</strong>, for the opportunity to take this class and to meet such great people.</span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p><span class="fadein"><em>I can't wait for UXI to start.</em></span></p>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <div class="fadein"></div>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <div class="fadein">
+          <p style="line-height:50%;">Thank you,</p>
+          <p style="line-height:50%;">Sue</p>
+          </div>
+        </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery( document ).ready(function ($) {
+            var delay = 900;
+            $( ".fadein" ).hide();
+            $( ".fadein" ).each(function (index) {
+              $( this ).delay( index * delay ).fadeIn( "slow", function() {
+                $( "html, body" ).animate({ scrollTop: $(this).offset().top }, 400);
+              });
+            });
+        });
+    </script>

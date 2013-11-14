@@ -20,8 +20,8 @@
         <% end %>
         <% if user_signed_in? %>
           <li><%= link_to current_user.email, edit_user_registration_path %></li>
-          <li><%= link_to 'Add a gif', new_post_path %></li>
-          <li><%= link_to "My gifs", posts_path %></li>
+          <li><%= link_to 'Add a gif', add_path %></li>
+          <li><%= link_to "My gifs", mygifs_path %></li>
           <li><%= link_to "My account", edit_user_registration_path %></li>
           <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
         <% end %>
