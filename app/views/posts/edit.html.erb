@@ -1,6 +1,4 @@
 <h1>Editing post</h1>
 
+<%= image_tag @post.image, class: 'img-responsive' %><br />
 <%= render 'form' %>
-
-<%= link_to 'Show', @post %> |
-<%= link_to 'Back', posts_path %>
