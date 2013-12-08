@@ -6,20 +6,20 @@ class RegistrationsController < Devise::RegistrationsController
     end
 
     def create
+    	
     	super
+		if resource.save
 
-	   	if resource.save
+	    	# Add the new user email to Mailchimp
+	    	# double-optin is part of the Mailchimp API that sends/doesn't send a confirmation email
+	    	# in this case I'm already sending a confirm signup email
+	    	# which already informs them they'll be added to a mailing list
 
-	    # Add the new user email to Mailchimp
-	    # double-optin is part of the Mailchimp API that sends/doesn't send a confirmation email
-	    # in this case I'm already sending a confirm signup email
-	    # which already informs them they'll be added to a mailing list
+	    	gb = Gibbon::API.new("8987e3522a5527eafa4c160895602d4d-us1")
 
-	    gb = Gibbon::API.new("8987e3522a5527eafa4c160895602d4d-us1")
+	    	gb.lists.subscribe({:id => '52f88b6fa2', :email => {:email => resource.email}, :double_optin => true})
 
-	    gb.lists.subscribe({:id => '52f88b6fa2', :email => {:email => resource.email}, :double_optin => true})
-
-		end
+	end
     end
 
 
