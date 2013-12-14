@@ -11,10 +11,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'devise'
-# gem "devise_mailchimp"  # Last officially released gem
 gem 'mailchimp-api', require: 'mailchimp'
 gem 'mandrill-api'
 gem 'gibbon'
+gem 'filepicker-rails'
 gem 'bootstrap-sass'
 
 group :doc do
